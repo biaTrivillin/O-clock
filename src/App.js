@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Button from './components/Button';
 import Header from './components/Header';
 
@@ -45,23 +45,27 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="font-principal font-light text-textColor bg-bgColor pb-11">
       <Header/>
-      <section>
-        <h2>{isTheTitle}</h2>
-        <h3>{isTheSubtitle}</h3>
-        <Button/>
-      </section>
-      <section>
-        <h2>O’CLOCK {isTheModel}</h2>
-        <article>{isTheDescription}</article>
-      </section>
-      <section>
-        <img src={isTheImg} alt=''/>
-        <button onClick={() => changeModel(1)}></button>
-        <button onClick={() => changeModel(2)}></button>
-        <button onClick={() =>changeModel(3)}></button>
-      </section>
+      <main className='flex flex-col items-center gap-7'>
+        <section className='flex flex-col items-center gap-2 pt-8'>
+          <h2 className='text-xl font-secundary w-2/3'>O’CLOCK {isTheModel}</h2>
+          <article className='text-base w-2/3 text-justify'>{isTheDescription}</article>
+        </section>
+        <section className='flex flex-col items-center gap-2'>
+          <img src={isTheImg} alt='' className='w-1/2'/>
+          <div className='flex flex-row gap-3'>
+            <button onClick={() => changeModel(1)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor'></button>
+            <button onClick={() => changeModel(2)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor'></button>
+            <button onClick={() =>changeModel(3)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor'></button>
+          </div>
+        </section>
+        <section className='flex flex-col items-center gap-1'>
+          <h2 className='text-lg'>{isTheTitle}</h2>
+          <h3 className='font-secundary text-base pb-5'>{isTheSubtitle}</h3>
+          <Button/>
+        </section>
+      </main>
     </div>
   );
 }
