@@ -2,7 +2,7 @@ import { FaBars } from "react-icons/fa";
 
 function Header() {
     return (
-      <header className="flex flex-row justify-between items-center pt-2 px-3">
+      <header className="flex flex-row justify-between items-center pt-2 px-3 absolute top-0 w-screen">
         <div className="flex flex-row gap-1 items-center">
           <FaBars />
           <h1 className="text-base">O'CLOCK</h1>

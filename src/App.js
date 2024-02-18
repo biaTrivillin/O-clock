@@ -45,9 +45,9 @@ function App() {
   }
 
   return (
-    <div className="font-principal font-light text-textColor bg-bgColor pb-11">
+    <div className="font-principal font-light text-textColor bg-bgColor pb-14 relative h-screen flex flex-col justify-center">
       <Header/>
-      <main className='flex flex-col items-center gap-7'>
+      <main className="flex flex-col items-center gap-7 after:content-[''] after:absolute after:bottom-[1.2rem] after:w-4/5 after:h-[0.05rem] after:bg-textColor lg:grid lg:grid-cols-3	lg:after:right-0 lg:after:left-0 after:my-0 after:mx-auto">
         <section className='flex flex-col items-center gap-2 pt-8'>
           <h2 className='text-xl font-secundary w-2/3'>O’CLOCK {isTheModel}</h2>
           <article className='text-base w-2/3 text-justify'>{isTheDescription}</article>
