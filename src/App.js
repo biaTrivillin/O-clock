@@ -1,4 +1,3 @@
-// import './App.css';
 import Button from './components/Button';
 import Header from './components/Header';
 
@@ -47,22 +46,22 @@ function App() {
   return (
     <div className="font-principal font-light text-textColor bg-bgColor pb-14 relative h-screen flex flex-col justify-center">
       <Header/>
-      <main className="flex flex-col items-center gap-7 after:content-[''] after:absolute after:bottom-[1.2rem] after:w-4/5 after:h-[0.05rem] after:bg-textColor lg:grid lg:grid-cols-3	lg:after:right-0 lg:after:left-0 after:my-0 after:mx-auto">
-        <section className='flex flex-col items-center gap-2 pt-8'>
-          <h2 className='text-xl font-secundary w-2/3'>O’CLOCK {isTheModel}</h2>
-          <article className='text-base w-2/3 text-justify'>{isTheDescription}</article>
+      <main className="flex flex-col items-center gap-7 after:content-[''] after:absolute after:bottom-[1.2rem] after:w-4/5 after:h-[0.05rem] after:bg-textColor lg:grid lg:grid-cols-[0.2fr_1.3fr_1fr_0.8fr_0.5fr] lg:gap-0 lg:after:right-0 lg:after:left-0 after:my-0 after:mx-auto after:animate-appear">
+        <section className='flex flex-col items-center gap-2 pt-8 lg:col-start-2 lg:col-end-3 animate-appear'>
+          <h2 className='text-xl font-secundary w-2/3 lg:text-xxl'>O’CLOCK {isTheModel}</h2>
+          <article className='text-base w-2/3 text-justify lg:text-lg'>{isTheDescription}</article>
         </section>
-        <section className='flex flex-col items-center gap-2'>
-          <img src={isTheImg} alt='' className='w-1/2'/>
-          <div className='flex flex-row gap-3'>
-            <button onClick={() => changeModel(1)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor'></button>
-            <button onClick={() => changeModel(2)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor'></button>
-            <button onClick={() =>changeModel(3)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor'></button>
+        <section className='flex flex-col items-center gap-2 lg:gap-5 animate-appearImg opacity-0'>
+          <img src={isTheImg} alt='' className='w-1/2 lg:w-3/4'/>
+          <div className='flex flex-row gap-3 lg:gap-7'>
+            <button onClick={() => changeModel(1)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]'></button>
+            <button onClick={() => changeModel(2)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]'></button>
+            <button onClick={() =>changeModel(3)} className='w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]'></button>
           </div>
         </section>
         <section className='flex flex-col items-center gap-1'>
-          <h2 className='text-lg'>{isTheTitle}</h2>
-          <h3 className='font-secundary text-base pb-5'>{isTheSubtitle}</h3>
+          <h2 className='text-lg lg:text-xl animate-appear'>{isTheTitle}</h2>
+          <h3 className='font-secundary text-base pb-5 lg:text-lg animate-appear'>{isTheSubtitle}</h3>
           <Button/>
         </section>
       </main>

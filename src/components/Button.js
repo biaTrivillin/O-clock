@@ -1,6 +1,8 @@
 function Button() {
     return (
-      <button className="text-sm border border-textColor px-5 py-1 flex flex-row hover:bg-hoverColor hover:text-bgColor hover:scale-125">BUY IT</button>
+      <div className="opacity-0 animate-pop">
+        <button className="text-sm border border-textColor px-5 py-1 flex flex-row hover:bg-textColor hover:text-bgColor hover:scale-125 transition lg:text-base">BUY IT</button>
+      </div>
     );
   }
   
