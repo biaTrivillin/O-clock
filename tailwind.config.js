@@ -49,7 +49,7 @@ module.exports = {
         slideIn: 'slideIn 2s ease-in-out 1 forwards',
         appear: 'appear 2s ease-in-out 1 forwards',
         appearImg: 'appear 1s ease-in-out 1.5s 1 forwards',
-        disappear: 'disappear 2s ease-in-out 1 forwards',
+        disappear: 'disappear 1s ease-in-out 1 forwards',
         pop: 'pop 0.8s ease-in 1.5s 1 forwards',
       },
     }
