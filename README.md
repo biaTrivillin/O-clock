@@ -27,7 +27,7 @@
 The project was created with **ReactJS**, streamlining the development process and ensuring a more organized and dynamic code.<br><br>
 
 ### 🖌️ Tailwind 
-More organized and faster styling, using mixins to make the code more concise and dynamic.<br><br>
+Streamlined development, enabling rapid styling adjustments through utility classes, resulting in more efficient and flexible code.<br><br>
 
 ### 🏃🏼‍♀️Animations
 The project features **animations and hover events**, enhancing the creation of a dynamic, interactive, and intuitive interface.<br><br>
