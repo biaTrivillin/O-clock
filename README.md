@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+## 🕐 O'CLOCK 🕐
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>A página web "o'clock" nasceu da minha vontade de aplicar os meus novos conhecimentos em tecnologia Tailwind CSS. <br>Neste site, de design elegante, simples e finalizado com animações incrivelmente atrativas, você encontrará a apresentação de três modelos de relógios de uma marca fictícia.<br>
 
-## Available Scripts
+## Preview
+<div align="center">
+  <img align="center" src="src/imgs/preview-oclock.gif" width="700px">
+</div> <br>
 
-In the project directory, you can run:
+## Stacks used in the project
+<div style="display: inline_block"><br>
+  <img align="center" alt="bia-js" height="40" width="50" src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg">
+  <img>
+  <img align="center" alt="bia-js" height="40" width="50" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg">
+  <img>
+  <img align="center" alt="bia-js" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img>
+  <img align="center" alt="bia-HTML" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img>
+  <img align="center" width="40" height="40" src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="bia-figma"/>
+</div>
+<br>
 
-### `npm start`
+## Features and Details
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ⚛️ ReactJS
+The project was created with **ReactJS**, streamlining the development process and ensuring a more organized and dynamic code.<br><br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🖌️ Tailwind 
+Streamlined development, enabling rapid styling adjustments through utility classes, resulting in more efficient and flexible code.<br><br>
 
-### `npm test`
+### 🏃🏼‍♀️Animations
+The project features **animations and hover events**, enhancing the creation of a dynamic, interactive, and intuitive interface.<br><br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📲 Mobile First
+The project's design was developed with a **mobile-first** approach, enabling the creation of a responsive page with minimal interventions through media queries.
 
-### `npm run build`
+<div align="left">
+  <img align="center" src="src/imgs/responsive-oclock.gif" width="500px">
+</div> <br><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the aplication:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `npm run start`
