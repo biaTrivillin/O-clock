@@ -4,7 +4,7 @@
 
 ## Preview
 <div align="center">
-  <img align="center" src="public/preview.gif" width="700px">
+  <img align="center" src="src/imgs/preview-oclock.gif" width="700px">
 </div> <br>
 
 ## Stacks used in the project
@@ -29,11 +29,15 @@ The project was created with **ReactJS**, streamlining the development process a
 ### 🖌️ Tailwind 
 More organized and faster styling, using mixins to make the code more concise and dynamic.<br><br>
 
-### 📲 Mobile First
-The project's design was developed with a **mobile-first** approach, enabling the creation of a responsive page with minimal interventions through media queries.<br><br>
-
 ### 🏃🏼‍♀️Animations
 The project features **animations and hover events**, enhancing the creation of a dynamic, interactive, and intuitive interface.<br><br>
+
+### 📲 Mobile First
+The project's design was developed with a **mobile-first** approach, enabling the creation of a responsive page with minimal interventions through media queries.
+
+<div align="left">
+  <img align="center" src="src/imgs/responsive-oclock.gif" width="500px">
+</div> <br><br>
 
 ## Running the aplication:
 
