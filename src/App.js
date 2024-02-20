@@ -3,21 +3,18 @@ import Header from './components/Header';
 
 import React, { useState } from 'react';
 
-import watchOne from './imgs/watchOne.png'
-import watchTwo from './imgs/watchTwo.png'
-import watchThree from './imgs/watchThree.png'
+import watchOne from './imgs/watchOne.png';
+import watchTwo from './imgs/watchTwo.png';
+import watchThree from './imgs/watchThree.png';
 
 
 function App() {
 
-  const descriptionOne = 'Indulge in our sleek wristwatch, featuring a minimalist dial and genuine leather strap. Perfect for everyday wear or special occasions, this timepiece blends style and functionality effortlessly.'
-
-  const descriptionTwo = 'Explore our collection of high-performance sports watches, designed to keep up with your active lifestyle. With water resistance and precise chronograph functionality, these watches are ideal for outdoor adventures.'
-
-  const descriptionThree = 'Appreciate the timeless sophistication of our luxury timepieces, boasting intricate details and impeccable finishing. Crafted with premium materials and Swiss movement, each watch is a masterpiece of precision and elegance.'
+  const descriptionOne = 'Indulge in our sleek wristwatch, featuring a minimalist dial and genuine leather strap. Perfect for everyday wear or special occasions, this timepiece blends style and functionality effortlessly.';
+  const descriptionTwo = 'Explore our collection of high-performance sports watches, designed to keep up with your active lifestyle. With water resistance and precise chronograph functionality, these watches are ideal for outdoor adventures.';
+  const descriptionThree = 'Appreciate the timeless sophistication of our luxury timepieces, boasting intricate details and impeccable finishing. Crafted with premium materials and Swiss movement, each watch is a masterpiece of precision and elegance.';
   
   const [isTheModel, setIsTheModel] = useState(1);
-
   const [isTheDescription, setIsTheDescription] = useState(descriptionOne);
   const [isTheImg, setIsTheImg] = useState(watchOne);
   const [isTheTitle, setIsTheTitle] = useState('What time is it?');
@@ -38,43 +35,47 @@ function App() {
     'subtitle': ['', 'answer it better', 'closer from you', 'been more attractive'],
     'colorBtn': ['', isTheColorOne, isTheColorTwo, isTheColorThree],
     'setColorBtn': ['', setIsTheColorOne, setIsTheColorTwo, setIsTheColorThree]
-  }
+  };
   
 
   const changeModel = (model) => {
 
-    setDescriptionAnimate('flex flex-col items-center gap-2 pt-8 lg:col-start-2 lg:col-end-3 animate-disappear')
-    setTitleAnimate('flex flex-col items-center gap-1 animate-disappear')
-    setImgAnimate('w-1/2 lg:w-3/4 animate-slideOut')
+    setDescriptionAnimate('flex flex-col items-center gap-2 pt-8 lg:col-start-2 lg:col-end-3 animate-disappear');
+    setTitleAnimate('flex flex-col items-center gap-1 animate-disappear');
+    setImgAnimate('w-1/2 lg:w-3/4 animate-slideOut');
 
 
     setTimeout(() => {
 
-      setIsTheImg(watchesArray.img[model])
+      setIsTheImg(watchesArray.img[model]);
 
-    }, 1900)
+    }, 1900);
 
     setTimeout(() => {
 
-      setImgAnimate('w-1/2 lg:w-3/4 animate-slideIn')
+      setImgAnimate('w-1/2 lg:w-3/4 animate-slideIn');
 
-    }, 2000)
+    }, 2000);
 
     setTimeout(() => {
 
       setIsTheModel(model);
-  
-      setIsTheDescription(watchesArray.description[model])
-      setIsTheTitle(watchesArray.title[model])
-      setIsTheSubtitle(watchesArray.subtitle[model])
+      setIsTheDescription(watchesArray.description[model]);
+      setIsTheTitle(watchesArray.title[model]);
+      setIsTheSubtitle(watchesArray.subtitle[model]);
 
-      setDescriptionAnimate('flex flex-col items-center gap-2 pt-8 lg:col-start-2 lg:col-end-3 animate-appear')
-      setTitleAnimate('flex flex-col items-center gap-1 animate-appear')
+      setDescriptionAnimate('flex flex-col items-center gap-2 pt-8 lg:col-start-2 lg:col-end-3 animate-appear');
+      setTitleAnimate('flex flex-col items-center gap-1 animate-appear');
 
-    }, 3000)
+    }, 3000);
 
     
-    if (watchesArray.colorBtn[model] !== 'w-[0.625rem] h-[0.625rem] bg-hoverColor rounded-full cursor-default hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]') watchesArray.setColorBtn[model]('w-[0.625rem] h-[0.625rem] bg-hoverColor rounded-full cursor-default hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]')
+    if (watchesArray.colorBtn[model] !== 'w-[0.625rem] h-[0.625rem] bg-hoverColor rounded-full cursor-default hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]') watchesArray.setColorBtn[model]('w-[0.625rem] h-[0.625rem] bg-hoverColor rounded-full cursor-default hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]');
+
+    watchesArray.setColorBtn.splice(model, 1);
+
+    watchesArray.setColorBtn[1]('w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]');
+    watchesArray.setColorBtn[2]('w-[0.625rem] h-[0.625rem] bg-textColor rounded-full cursor-pointer hover:bg-hoverColor lg:w-[0.9rem] lg:h-[0.9rem]');
 
   }
 
